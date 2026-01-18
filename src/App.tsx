@@ -3,14 +3,11 @@ import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
 import Home from './pages/Home';
 import About from './pages/About';
-import Projects from './pages/Projects';
+import Properties from './pages/Properties';
+import PropertyDetails from './pages/PropertyDetails';
 import Lifestyle from './pages/Lifestyle';
 import Locations from './pages/Locations';
 import Contact from './pages/Contact';
-import HaldwaniProperties from './pages/HaldwaniProperties';
-import NainitalProperties from './pages/NainitalProperties';
-import MukteshwarProperties from './pages/MukteshwarProperties';
-import ChampawatProperties from './pages/ChampawatProperties';
 import Footer from './components/Footer';
 import FloatingContact from './components/FloatingContact';
 
@@ -23,14 +20,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/properties" element={<Properties />} />
+            <Route path="/properties/:slug" element={<PropertyDetails />} />
             <Route path="/lifestyle" element={<Lifestyle />} />
             <Route path="/locations" element={<Locations />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/properties/haldwani" element={<HaldwaniProperties />} />
-            <Route path="/properties/nainital" element={<NainitalProperties />} />
-            <Route path="/properties/mukteshwar" element={<MukteshwarProperties />} />
-            <Route path="/properties/champawat" element={<ChampawatProperties />} />
             {/* Redirect any unknown routes to home */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

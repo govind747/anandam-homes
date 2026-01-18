@@ -19,50 +19,50 @@ const Home = () => {
 
   const propertyTypes = [
     {
-      title: "Freehold Plots",
-      description: "Premium land parcels with mountain views",
+      title: "Luxury Villas & Residences",
+      description: "Elegant homes with mountain views",
       image: "https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      sizes: "125 sq yd - 500 sq yd"
+      sizes: "2-4 BHK luxury homes"
     },
     {
-      title: "Mountain Farmhouses",
-      description: "2BHK homes surrounded by nature",
+      title: "Mountain Estates & Farmhouses",
+      description: "Spacious estates surrounded by nature",
       image: "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      sizes: "500 sq yd with 2BHK"
+      sizes: "Large estates with gardens"
     },
     {
-      title: "Camp Houses",
-      description: "Rustic retreats for weekend escapes",
+      title: "Premium Land & Plots",
+      description: "Freehold land for custom homes",
       image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      sizes: "Customizable designs"
+      sizes: "1000 sqft - 5000 sqft plots"
     },
     {
-      title: "Canopy Homes",
-      description: "Elevated living among the trees",
+      title: "Holiday Homes & Investments",
+      description: "Rental-ready mountain retreats",
       image: "https://images.pexels.com/photos/1029599/pexels-photo-1029599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-      sizes: "Premium tree-house style"
+      sizes: "Turnkey investment properties"
     }
   ];
 
   const locations = [
     {
       name: "Haldwani",
-      description: "Gateway to Kumaon Hills",
+      description: "Gateway to Kumaon",
       image: "https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
       name: "Nainital",
-      description: "Lake city of India",
+      description: "Lake City Paradise",
       image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
-      name: "Mukteshwar",
-      description: "Himalayan paradise",
+      name: "Bhimtal",
+      description: "Serene Lake Retreat",
       image: "https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     },
     {
-      name: "Champawat",
-      description: "Ancient temple town",
+      name: "Mukteshwar",
+      description: "Himalayan Heights",
       image: "https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     }
   ];
@@ -71,17 +71,17 @@ const Home = () => {
     {
       icon: Shield,
       title: "100% Legal & Freehold",
-      description: "All properties come with clear legal titles"
+      description: "Clear titles and transparent processes"
     },
     {
       icon: Award,
-      title: "Premium Quality",
-      description: "Handpicked locations with stunning views"
+      title: "Curated Excellence",
+      description: "Thoughtfully selected premium properties"
     },
     {
       icon: Users,
-      title: "Trusted by 500+",
-      description: "Families have found their mountain homes"
+      title: "Trusted Legacy",
+      description: "Serving discerning clients across India"
     }
   ];
 
@@ -105,10 +105,10 @@ const Home = () => {
         <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h1 
             {...fadeInUp}
-            className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-white mb-6 leading-tight"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           >
-            Own a Piece of the
-            <span className="block text-emerald-400">Himalayas</span>
+            Luxury Rooted in
+            <span className="block text-emerald-400">Nature</span>
           </motion.h1>
           
           <motion.p 
@@ -116,17 +116,26 @@ const Home = () => {
             transition={{ delay: 0.2 }}
             className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed max-w-3xl mx-auto"
           >
-            Second homes in the lap of nature. Wake up to mountain views, breathe clean air, and live the peaceful life you deserve.
+            Curated Himalayan Homes, Estates & Land Investments. Discover refined living across 
+            Uttarakhand's most exclusive mountain destinations.
+          </motion.p>
+          
+          <motion.p 
+            {...fadeInUp}
+            transition={{ delay: 0.3 }}
+            className="text-lg text-emerald-200 mb-8 font-medium italic"
+          >
+            Inspired by Nature. Designed for Life.
           </motion.p>
           
           <motion.div 
             {...fadeInUp}
-            transition={{ delay: 0.4 }}
+            transition={{ delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Link
-              to="/projects"
-              className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-2xl hover:shadow-emerald-500/25 hover:scale-105"
+              to="/properties"
+              className="bg-vasanta-600 hover:bg-vasanta-700 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-2xl hover:shadow-vasanta-500/25 hover:scale-105"
             >
               Explore Properties
             </Link>
@@ -180,10 +189,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div variants={fadeInUp} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
-              Choose Your Mountain Home
+              Thoughtfully Curated Properties
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From intimate plots to spacious farmhouses, find the perfect property that matches your vision of mountain living.
+              Each offering reflects our philosophy of timeless design, natural harmony, and long-term value.
             </p>
           </motion.div>
 
@@ -209,7 +218,7 @@ const Home = () => {
                   <div className="p-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-2">{property.title}</h3>
                     <p className="text-gray-600 mb-3">{property.description}</p>
-                    <p className="text-emerald-600 font-medium">{property.sizes}</p>
+                    <p className="text-vasanta-600 font-medium">{property.sizes}</p>
                   </div>
                 </div>
               </motion.div>
@@ -223,10 +232,10 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div variants={fadeInUp} className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-6">
-              Premium Locations in Uttarakhand
+              Himalayan Destinations We Serve
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Carefully selected locations that offer the perfect blend of accessibility, natural beauty, and investment potential.
+              Haldwani • Nainital • Bhimtal • Lansdowne • Champawat • Dharchula • Kumaon & Garhwal Regions
             </p>
           </motion.div>
 
@@ -240,7 +249,7 @@ const Home = () => {
                 variants={fadeInUp}
                 className="group cursor-pointer"
               >
-                <Link to={`/properties/${location.name.toLowerCase()}`} className="block">
+                <Link to={`/properties?city=${location.name}`} className="block">
                   <div className="relative h-64 rounded-2xl overflow-hidden">
                     <img
                       src={location.image}
@@ -251,7 +260,7 @@ const Home = () => {
                     <div className="absolute bottom-6 left-6 text-white">
                       <h3 className="text-2xl font-semibold mb-1">{location.name}</h3>
                       <p className="text-gray-200">{location.description}</p>
-                      <p className="text-emerald-300 text-sm mt-2">View Properties →</p>
+                      <p className="text-vasanta-300 text-sm mt-2">View Properties →</p>
                     </div>
                   </div>
                 </Link>
@@ -262,20 +271,20 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-emerald-600">
+      <section className="py-20 bg-vasanta-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div variants={fadeInUp}>
             <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">
-              Ready to Own Your Himalayan Retreat?
+              Begin Your Journey Home
             </h2>
             <p className="text-xl text-emerald-100 mb-8 max-w-3xl mx-auto">
-              Join hundreds of families who have found their perfect mountain home. Schedule a site visit and experience the tranquility yourself.
+              Whether you seek a sanctuary, an investment, or a legacy asset — Vasanta Homes is here to guide you.
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center bg-white text-emerald-600 hover:bg-gray-50 px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
+              className="inline-flex items-center bg-white text-vasanta-600 hover:bg-gray-50 px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
             >
-              Schedule Site Visit
+              Schedule a Private Consultation
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
           </motion.div>

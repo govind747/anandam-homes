@@ -11,12 +11,15 @@ const Footer = () => {
             <div className="flex items-center space-x-2">
               <Mountain className="h-8 w-8 text-emerald-600" />
               <span className="text-2xl font-serif font-bold text-gray-900">
-                AnandamEstate
+                Vasanta Homes
               </span>
             </div>
             <p className="text-gray-600 leading-relaxed">
-              Your gateway to owning a piece of the Himalayas. Premium freehold properties 
-              in the most serene locations of Uttarakhand.
+              Luxury rooted in nature. Curated Himalayan homes, estates & land investments 
+              designed for those who seek serenity, authenticity, and long-term value.
+            </p>
+            <p className="text-sm text-gray-500 italic">
+              Inspired by Nature. Designed for Life.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-emerald-600 transition-colors">
@@ -37,7 +40,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-600 hover:text-emerald-600 transition-colors">Home</Link></li>
               <li><Link to="/about" className="text-gray-600 hover:text-emerald-600 transition-colors">About Us</Link></li>
-              <li><Link to="/projects" className="text-gray-600 hover:text-emerald-600 transition-colors">Projects</Link></li>
+              <li><Link to="/properties" className="text-gray-600 hover:text-emerald-600 transition-colors">Properties</Link></li>
               <li><Link to="/lifestyle" className="text-gray-600 hover:text-emerald-600 transition-colors">Lifestyle</Link></li>
               <li><Link to="/locations" className="text-gray-600 hover:text-emerald-600 transition-colors">Locations</Link></li>
             </ul>
@@ -49,8 +52,10 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="text-gray-600">Haldwani</li>
               <li className="text-gray-600">Nainital</li>
+              <li className="text-gray-600">Bhimtal</li>
               <li className="text-gray-600">Mukteshwar</li>
               <li className="text-gray-600">Champawat</li>
+              <li className="text-gray-600">Lansdowne</li>
             </ul>
           </div>
 
@@ -68,7 +73,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-emerald-600 flex-shrink-0" />
-                <span className="text-gray-600">info@anandamestate.com</span>
+                <span className="text-gray-600">info@vasantahomes.com</span>
               </div>
             </div>
           </div>
@@ -77,7 +82,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-stone-200">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-gray-600 text-sm">
-              © 2024 AnandamEstate. All rights reserved. Premium Himalayan Properties.
+              © 2024 Vasanta Homes. All rights reserved. Luxury Rooted in Nature.
             </p>
             <div className="flex space-x-6 text-sm text-gray-600">
               <a href="#" className="hover:text-emerald-600 transition-colors">Privacy Policy</a>

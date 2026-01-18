@@ -20,20 +20,20 @@ const Header = () => {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
-    { name: 'Projects', href: '/projects' },
+    { name: 'Properties', href: '/properties' },
     { 
-      name: 'Properties', 
-      href: '/projects',
+      name: 'Locations', 
+      href: '/locations',
       submenu: [
-        { name: 'All Properties', href: '/projects' },
-        { name: 'Haldwani', href: '/properties/haldwani' },
-        { name: 'Nainital', href: '/properties/nainital' },
-        { name: 'Mukteshwar', href: '/properties/mukteshwar' },
-        { name: 'Champawat', href: '/properties/champawat' },
+        { name: 'All Locations', href: '/locations' },
+        { name: 'Haldwani', href: '/properties?city=Haldwani' },
+        { name: 'Nainital', href: '/properties?city=Nainital' },
+        { name: 'Bhimtal', href: '/properties?city=Bhimtal' },
+        { name: 'Mukteshwar', href: '/properties?city=Mukteshwar' },
+        { name: 'Champawat', href: '/properties?city=Champawat' },
       ]
     },
     { name: 'Lifestyle', href: '/lifestyle' },
-    { name: 'Locations', href: '/locations' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -58,7 +58,7 @@ const Header = () => {
             <span className={`text-2xl font-serif font-bold transition-colors duration-300 ${
               isScrolled ? 'text-gray-900' : 'text-white'
             }`}>
-              AnandamEstate
+              Vasanta Homes
             </span>
           </Link>
 
